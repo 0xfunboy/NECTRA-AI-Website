@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NECTRA AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Rajdhani', sans-serif;
+      }
+      /* Custom scrollbar for a more modern look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0B0E11; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #F0B90B;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #f3c84b;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeInUp {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      .content-section {
+        opacity: 0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "simplex-noise": "https://aistudiocdn.com/simplex-noise@^4.0.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#0B0E11]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
