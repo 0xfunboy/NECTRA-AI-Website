@@ -26,7 +26,9 @@ View your app in AI Studio: https://ai.studio/apps/drive/1rd8horhhKa21avBpeM8YZn
 
 The distributed website is in `site/`. It contains the HTML entry point, the bundled JavaScript and CSS, and four Rajdhani font weights. Run `sha256sum -c production.sha256` from the repository root to check every published file. Preview this release with `python3 -m http.server 8000 --bind 127.0.0.1 --directory site`.
 
-The React/TypeScript project at the repository root is the development source. Its HTML currently loads Tailwind and fonts from external providers. The deployed release bundles its CSS and fonts locally. The exact lockfile and packaging step for that release have not been recovered. Use the verified release directory when restoring production. External credentials should never be embedded in frontend JavaScript.
+The React/TypeScript project at the repository root is the development source. Its HTML loads Tailwind and fonts from external providers. The deployed CSS loads four local Rajdhani files for weights 400, 500, 600 and 700. The JavaScript bundle identifies React 19.2.0, within the development constraint `^19.2.0`.
+
+An isolated render of `components/Header.tsx` produced the text links About, Features, Ecosystem, Tokenomics and Roadmap. The release opened in Chromium produced Home, Roadmap, Tokenomics and Whitepaper. This difference also requires the production component source. The published revisions and available deployment copies supplied the eight release files, but no matching component revision, dependency lockfile or JavaScript source map. Use the checksummed `site/` directory to restore this version.
 
 ## Licensing
 
