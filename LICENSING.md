@@ -5,3 +5,5 @@ The [0xfunboy Non-Commercial License, version 1.1](LICENSE.md) applies to origin
 It does not replace licenses attached to third-party code, assets, models, or data. Earlier grants and explicit file-level or package-level licenses remain in effect. The presence of the non-commercial text does not relicense an entire upstream project or restrict material already available under a separate license.
 
 Model weights, datasets, external APIs, and separately licensed dependencies require their own applicable permissions. Commercial permission for eligible 0xfunboy material can be requested through [the official profile](https://github.com/0xfunboy).
+
+The four Rajdhani font files in the deployed `site/assets/` are distributed under the SIL Open Font License. See [RAJDHANI-OFL.txt](RAJDHANI-OFL.txt). The JavaScript bundle retains its third-party notices.
